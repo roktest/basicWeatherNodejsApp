@@ -1,0 +1,17 @@
+{
+  "name": "basicWeatherNodejsApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "local": "nodemon src/app.js"
+  },
+  "author": "rodrigo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "nodemon": "^2.0.20",
+    "request": "^2.88.2"
+  }
+}

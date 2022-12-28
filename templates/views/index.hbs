@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weater App - {{menu.home.pathName}}</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get your weather, whereever you go/ are/ want!</p>
+
+        <form>
+            <div class="input-form location">
+                <label for="location">
+                    Location
+                    <input type="text" id="location" name="location" placeholder="philadelphia">
+                </label>
+            </div>
+            <div class="input-form unit">
+                <label for="unit">
+                    Unit
+                    <input type="text" id="unit" name="unit" placeholder="m/ f/ s">
+                    <small>(M)etric/ (F)ahrenheit/ (S)cientific</small>
+                </label>
+            </div>
+            <div class="input-form button">
+                <button type="submit" id="button">Search</button>
+            </div>
+        </form>
+        
+            <div class="error">
+                <p></p>
+            </div>
+            
+
+        
+
+        <!--Desde aca><-->
+
+        <table class="forecastTable">
+            <tbody>
+                <tr>
+                    <td class="todayDate" colspan="3">
+                        <p></p>
+                    </td>
+                    <td rowspan="2">
+                        <div class="weatherIcons">
+                            <img src="" alt="weather icon">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="country">
+                            <p></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="regionSpan">
+                        <div class="region">
+                            <p></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="weatherTemperature">
+                            <p></p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="feelslike">
+                            <p></p>
+                        </div>
+                    </td>
+                    <td colspan="2">
+                        <div class="weatherDescription">
+                            <p></p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="random">
+                            <p></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="humidity">
+                            <p></p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="precipitation">
+                            <p></p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="windSpeed">
+                            <p></p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="windDirection">
+                            <p></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="uvIndex">
+                            <p></p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cloudcover">
+                            <p></p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="visibility">
+                            <p></p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="airPressure">
+                            <p></p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--Hasta aca><-->
+
+    </div>
+
+    {{>footer}}
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

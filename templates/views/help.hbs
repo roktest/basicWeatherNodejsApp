@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weater App - {{menu.help.pathName}}</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <h3>Weather App Usage</h3>
+        <p>{{locationDescription}}</p>
+        <p>{{unitDescription}}</p>
+        <p>{{otherDescription}}</p>
+        <div id="units_parameter" class="topic">      
+            <h3>Units Parameter <span>Available</span></h3>
+            
+            <p>By default, the API will return all results in metric units. Aside from metric units, other common unit formats are supported as well. You can use the <code>units</code> parameter to switch between the different unit formats Metric, Scientific and Fahrenheit.</p>
+            
+            <p class="subheading"><strong><code>m</code> for Metric:</strong></p>
+            
+            <table>
+                
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Units</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td><code>units = m</code></td>
+                        <td>temperature: Celsius</td>
+                    </tr>
+                    <tr>
+                        <td><code>units = m</code></td>
+                        <td>Wind Speed/Visibility: Kilometers/Hour</td>
+                    </tr>
+                    <tr>
+                        <td><code>units = m</code></td>
+                        <td>Pressure: MB - Millibar</td>
+                    </tr>
+                    <tr>
+                        <td><code>units = m</code></td>
+                        <td>Precip: MM - Millimeters</td>
+                    </tr>
+                    <tr>
+                        <td><code>units = m</code></td>
+                        <td>Total Snow: CM - Centimeters</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+            
+            <br>
+            
+            <p class="subheading"><strong><code>s</code> for Scientific:</strong></p>
+            
+            <table>
+                
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Units</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td><code>units = s</code></td>
+                        <td>temperature: Kelvin</td>
+                    </tr>
+                    <tr>
+                        <td><code>units = s</code></td>
+                        <td>Wind Speed/Visibility: Kilometers/Hour</td>
+                    </tr>
+                    <tr>
+                        <td><code>units = s</code></td>
+                        <td>Pressure: MB - Millibar</td>
+                    </tr>
+                    <tr>
+                        <td><code>units = s</code></td>
+                        <td>Precip: MM - Millimeters</td>
+                    </tr>
+                    <tr>
+                        <td><code>units = s</code></td>
+                        <td>Total Snow: CM - Centimeters</td>
+                    </tr>
+                </tbody>
+            
+            </table>
+            
+            <br>
+            
+            <p class="subheading"><strong><code>f</code> for Fahrenheit:</strong></p>
+            
+            <table>
+                
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Units</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td><code>units = f</code></td>
+                        <td>temperature: Fahrenheit</td>
+                    </tr>
+                    <tr>
+                        <td><code>units = f</code></td>
+                        <td>Wind Speed/Visibility: Miles/Hour</td>
+                    </tr>
+                    <tr>
+                        <td><code>units = f</code></td>
+                        <td>Pressure: MB - Millibar</td>
+                    </tr>
+                    <tr>
+                        <td><code>units = f</code></td>
+                        <td>Precip: IN - Inches</td>
+                    </tr>
+                    <tr>
+                        <td><code>units = f</code></td>
+                        <td>Total Snow: IN - Inches</td>
+                    </tr>
+                </tbody>
+            
+            </table>
+                                    
+        </div>
+    </div>
+    {{>footer}}
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
